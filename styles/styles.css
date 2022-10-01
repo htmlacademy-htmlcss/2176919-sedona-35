@@ -225,3 +225,18 @@ body {
   margin-left: 0;
   padding-left: 0;
 }
+
+.email,
+.cost-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.select-control {
+  font-family: inherit;
+}
+
+.cost-input {
+  font-weight: 700;
+}
