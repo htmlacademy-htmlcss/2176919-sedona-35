@@ -47,7 +47,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <section class="catalog-filter">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -108,7 +108,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-filter-price">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -130,10 +130,13 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
-          <button class="button-reset" type="reset">Сбросить</button>
+          <div class="catalog-filter-action">
+            <button class="button" type="submit">Применить</button>
+            <button class="button-reset" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
+      <div class="filter-search">
         <p class="filter-result">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
@@ -149,6 +152,7 @@
         <a href="#" class="button-view button-view-list">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
       <section class="catalog-hotel">
         <ul class="hotel-list">
           <li class="hotel-card">

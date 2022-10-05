@@ -27,7 +27,15 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -49,8 +57,10 @@ body {
   border-color: #82B3D3;
 }
 
-.main-index{
-  text-align: center;
+.main-container{
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .navigation-link {
@@ -112,11 +122,14 @@ body {
   background-size: 100% 415px;
   background-repeat: no-repeat;
   height: 415px;
+  text-align: center;
+  padding-top: 96px;
 }
 
 .subscription-title,
 .subscription-promise {
   color: #FFFFFF;
+  padding: 0 304px;
 }
 
 .telephone {
@@ -124,12 +137,17 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  margin-left: 245px;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin-left: 0;
+  padding-left: 70px;
+  margin-top: 0;
+  padding-top: 35px;
 }
 
 .breadcrumbs {
@@ -162,6 +180,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 40px;
 }
 
 .hotel-card-link {
@@ -207,6 +226,8 @@ body {
 
 .subscription-catalog {
   text-align: center;
+  height: 415px;
+  padding-top: 96px;
 }
 
 .button-added {
@@ -235,8 +256,132 @@ body {
 
 .select-control {
   font-family: inherit;
+  margin-left: 220px;
+  width: 250px;
 }
 
 .cost-input {
   font-weight: 700;
+}
+
+.page-header {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  width: 990px;
+  margin: 0 auto;
+}
+
+.navigation-list,
+.advantages-item {
+  width: 400px;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.hero {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  text-align: center;
+}
+
+.hotel-search,
+.advantages {
+  text-align: center;
+}
+
+.page-footer {
+  text-align: center;
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+}
+
+.advantages-title {
+  padding: 0 112px;
+}
+
+.advantages-description,
+.services-item {
+  padding: 0 85px;
+}
+
+.advantages-page-title {
+  padding: 0 290px;
+}
+
+.presentation-text {
+  padding: 0 304px;
+}
+
+.htmlacademy-link {
+  width: 115px;
+  margin-left: 230px;
+}
+
+.footer-social {
+  width: 200px;
+  margin-left: 80px;
+}
+
+.catalog-filter-form,
+.pagination {
+  display: flex;
+}
+
+.breadcrumbs-item,
+.catalog-filter-group {
+  padding-left: 70px;
+}
+
+.catalog-filter-price {
+  padding-left: 140px;
+}
+
+.catalog-filter-action {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  width: 191px;
+  padding-left: 70px;
+}
+
+.filter-search {
+  display: flex;
+  width: 1060px;
+  margin: auto;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 90px;
+}
+
+.hotel-card {
+  width: 300px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
+
+.pagination-item {
+  width: 60px;
 }
