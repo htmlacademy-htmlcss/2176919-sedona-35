@@ -72,6 +72,7 @@ body {
 .main-index,
 .main-inner {
   flex-grow: 1;
+  width: 100%;
 }
 
 .navigation-link {
@@ -159,6 +160,7 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  margin-left: 245px;
 }
 
 .inner-header-title {
@@ -284,6 +286,8 @@ body {
 
 .select-control {
   font-family: inherit;
+  margin-left: 220px;
+  width: 250px;
 }
 
 .cost-input {
