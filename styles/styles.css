@@ -70,6 +70,8 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   border: none;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .main-index,
@@ -84,8 +86,7 @@ body {
   line-height: 24px;
   color: inherit;
   text-decoration: none;
-  display: block;
-  padding: 20px 16px;
+  margin-right: 32px;
 }
 
 .presentation {
@@ -127,7 +128,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0 auto;
 }
 
 .advantages-list,
@@ -179,9 +179,7 @@ body {
   display: flex;
 }
 
-.breadcrumbs-link {
-  color: inherit;
-}
+
 
 .catalog-filter-title {
   font-weight: 700;
@@ -208,6 +206,8 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   padding: 8px 50px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .hotel-card-link {
@@ -217,6 +217,7 @@ body {
   color: #000000;
   text-decoration: none;
   grid-column: 1/3;
+
 }
 
 .raiting-value {
@@ -234,7 +235,6 @@ body {
 
 .pagination-link {
   display: block;
-  box-sizing: border-box;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
@@ -242,12 +242,19 @@ body {
   line-height: 36px;
   font-weight: 700;
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 12px 0;
 }
 
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 12px 0;
 }
 
 .navigation-link-user,
@@ -264,6 +271,7 @@ body {
 
 .button-added {
   background-color: #7DB54F;
+  width: 140px;
 }
 
 .navigation-list,
@@ -288,7 +296,9 @@ body {
 
 .select-control {
   font-family: inherit;
-  width: 250px;
+  width: 290px;
+  padding-left: 20px;
+  border: solid 2px #E5E5E5;
 }
 
 .cost-input {
@@ -340,8 +350,7 @@ body {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
-  padding-top: 90px;
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: dense;
 }
 
@@ -372,12 +381,13 @@ body {
 .presentation-text {
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 62px;
+  margin-bottom: 62px;
 }
 
 .subscription-promise {
   margin:0;
-  padding: 20px 363px 54px;
+  padding: 20px 363px 0;
+  margin-bottom:  54px;
 }
 
 .footer-social {
@@ -393,9 +403,11 @@ body {
 
 .hotel-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 0 70px 80px;
+  padding: 0 70px;
+  justify-content: center;
+  margin-bottom:  80px;
 }
 
 .main-inner {
@@ -409,9 +421,12 @@ body {
 
 .hotel-card {
   display: grid;
-  grid-template-columns: 140px 140px;
-  gap: 16px;
-  padding: 20px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 20px;
+  padding: 19px 19px;
+  border: solid 1px #E6E6E6;
+  border-radius: 4px;
+
 }
 
 .advantages {
@@ -437,19 +452,13 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.footer-social-item {
-  width: 25px;
-  height: 20px;
-}
-
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  background-color: aqua;
 }
 
 .catalog-filter-form {
-  padding-top: 40px;
+  padding-top: 69px;
 }
 
 .catalog-filter-group {
@@ -461,30 +470,26 @@ body {
   padding-bottom: 16px;
 }
 
-.catalog-filter-action .button {
-  padding: 8px 50px;
-  margin-bottom: 40px;
-}
-
 .filter-result {
   padding: 0;
   margin: 0;
 }
 
 .button-view {
-  display: block;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
+  background: url(../images/view-icon.svg);
+  background-repeat: no-repeat;
+  border: solid 2px #E5E5E5;
 }
 
 .filter-search-view {
   display: flex;
   width: 160px;
-  background-color: aqua;
 }
 
 .button-view:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 .pagination {
@@ -509,10 +514,6 @@ body {
   background-color: #F2F2F2;
 }
 
-.hotel-card-image {
-  display: block;
-}
-
 .hotel-card-title {
   margin: 0;
 }
@@ -533,6 +534,7 @@ body {
 .advantages-description {
   padding: 0 85px;
   margin: 0;
+  order: 3;
 }
 
 .advantages-photo {
@@ -564,12 +566,11 @@ body {
   margin: 0;
 }
 
-.navigation-item-user {
-  background-color: aqua;
-}
+
 
 .advantages-title {
   padding: 0 114px;
+  margin: 0;
 }
 
 .presentation-acquaintance {
@@ -605,4 +606,468 @@ body {
 
 .navigation-link-user {
   padding: 8px 50px;
+}
+
+.hotel-card-button {
+  width: 140px;
+}
+
+.hotel-card-favorites {
+  width: 140px;
+}
+
+.advantages-description-title {
+  padding: 0 85px;
+  margin: 0 0 90px;
+}
+
+
+
+.footer-social-link {
+  background-image: url(../images/social.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.footer-social-vk {
+  background-position: -20px -20px;
+}
+
+.footer-social-telegram {
+  background-position: -80px -20px;
+}
+
+.footer-social-YouTube {
+  background-position: -140px -20px;
+}
+
+.footer-social-link:hover {
+   background-position-y: -64px;
+}
+
+.footer-social-link:focus-visible {
+  background-position-y: -110px;
+  outline: none;
+}
+
+.footer-social-link:active {
+  background-position-y: -150px;
+}
+
+.navigation-link-active {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-underline-offset: 21px;
+  text-decoration-thickness: 3px;
+}
+
+.button-view-tile {
+  background-position: -4px;
+}
+
+.button-view-slideshow {
+  background-position: -62px;
+}
+
+.button-view-list {
+  background-position: -120px;
+}
+
+.button-view:hover {
+  border: solid 2px #000000;
+}
+
+.button-view:focus-visible {
+  border: solid 2px #68A2CA;
+  outline: none;
+}
+
+.button-view:active {
+  border: solid 2px #000000;
+}
+
+.navigation-link-user:hover,
+.hotel-search-but:hover,
+.hotel-card-button:hover {
+  background-color: #615048;
+}
+
+.navigation-link-user:focus-visible,
+.hotel-search-but:focus-visible,
+.hotel-card-button:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+.navigation-link-user:active,
+.hotel-search-but:active,
+.hotel-card-button:active {
+  background-color: #756157;
+  color: rgba(255,255,255,0.3);
+}
+
+.navigation-link-user:disabled,
+.hotel-search-but:disabled,
+.hotel-card-button:disabled {
+  background-color: #E5E5E5;
+}
+
+.navigation-link-user:disabled:hover,
+.hotel-search-but:disabled:hover,
+.subscription-but:disabled:hover,
+.catalog-filter-batton:disabled:hover,
+.hotel-card-favorites:disabled:hover,
+.button-added:disabled:hover,
+.hotel-card-button:disabled:hover {
+  background-color: #E5E5E5;
+  outline: none;
+  cursor: default;
+}
+
+.breadcrumbs-item {
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 10px;
+  margin-top: 13px;
+  margin-right: 11px;
+}
+
+.breadcrumbs-link-icon {
+  color: inherit;
+  display: block;
+  background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  margin: 11px 11px 0 0;
+}
+
+.breadcrumbs-link {
+  display: block;
+  padding-left: 20px;
+  margin-top: -5px;
+}
+
+.advantages-item::before {
+  order: 2;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  width: 60px;
+  content: "";
+  align-self: center;
+  margin: 30px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper::before {
+  order: 2;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  width: 60px;
+  content: "";
+  align-self: center;
+  margin: 30px 0;
+}
+
+.services-list :nth-child(1)::before {
+  background-image: url(../images/housing.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 75px;
+  height: 72px;
+  align-self: center;
+}
+
+.services-list :nth-child(2)::before {
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 74px;
+  height: 70px;
+  align-self: center;
+}
+
+.services-list :nth-child(3)::before {
+  background-image: url(../images/souvenir.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 64px;
+  height: 76px;
+  align-self: center;
+}
+
+.subscription-but:hover,
+.catalog-filter-batton:hover,
+.hotel-card-favorites:hover,
+.button-added:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-but:active,
+.catalog-filter-batton:active,
+.hotel-card-favorites:active,
+.button-added:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-but:disabled,
+.catalog-filter-batton:disabled,
+.hotel-card-favorites:disabled,
+.button-added:disabled {
+  background-color: #E5E5E5;
+}
+
+.subscription-but:focus-visible,
+.catalog-filter-batton:focus-visible,
+.hotel-card-favorites:focus-visible,
+.button-added:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.telephone:hover {
+  color: #756157;
+}
+
+.telephone:focus-visible {
+  color: #756157;
+  outline: none;
+}
+
+.telephone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-icon {
+  width: 115px;
+  height: 34px;
+  fill: #000000;
+  position: absolute;
+  right: 0;
+}
+
+.htmlacademy-link {
+  position: relative;
+  width: 115px;
+  height: 34px;
+  position: relative;
+  display: block;
+}
+
+.htmlacademy-link:hover .footer-icon path{
+  fill: #756157;
+}
+
+.htmlacademy-link:activ .footer-icon path{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link:focus-visible .footer-icon path{
+  fill: #756157;
+}
+
+.htmlacademy-link:focus-visible {
+  outline: none;
+}
+
+.catalog-filter-batton {
+  padding: 8px 50px;
+  margin-bottom: 40px;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus-visible {
+  outline: solid 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reset:disabled:hover {
+  opacity: 0.1;
+  outline: none;
+  cursor: default;
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+  outline: solid 1px #82B3D3;
+}
+
+.pagination-link:focus-visible {
+  background-color: #68A2CA;
+  outline: solid 1px #82B3D3;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.select-control:active {
+  border-color: #3F5E72;
+}
+
+.select-control:disabled:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: default;
+}
+
+.select-control:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.control-input + .control {
+  position: relative;
+  padding: 0 0 0 40px;
+  cursor: pointer;
+}
+
+.control-input + .control::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+.catalog-filter-item:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus-visible + .control::before {
+  outline: solid 3px #83B3D3;
+}
+
+.catalog-filter-item:active {
+  opacity: 0.3;
+}
+
+.control-input:checked + .control::before {
+  background-image: url(../images/check%20mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.control-radio + .control-radio-label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+
+.control-radio + .control-radio-label::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.control-radio:focus-visible + .control-radio-label::before {
+  outline: solid 3px #83B3D3;
+}
+
+.control-radio + .control-radio-label::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3F5E72;
+  opacity: 0;
+}
+
+.control-radio:checked + .control-radio-label::after {
+  opacity: 1;
+}
+
+
+
+
+
+.navigation-link-search {
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 26px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.navigation-link-favorites {
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 33px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+.navigation-link-favorites::before {
+  background-image: url(../images/number.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 10px;
 }
