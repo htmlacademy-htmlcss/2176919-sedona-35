@@ -309,7 +309,6 @@ body {
   display: flex;
   justify-content:space-between;
   width: 100%;
-  padding-left: 28px;
   padding-right: 70px;
 }
 
@@ -331,6 +330,7 @@ body {
 .logo-link {
   margin-bottom: -12px;
   z-index: 1;
+  margin-right: 44px;
 }
 
 .navigation-item,
@@ -1030,10 +1030,6 @@ body {
   opacity: 1;
 }
 
-
-
-
-
 .navigation-link-search {
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
@@ -1053,14 +1049,6 @@ body {
   height: 18px;
   display: inline-block;
 }
-
-
-
-
-
-
-
-
 
 .navigation-link-favorites::before {
   background-image: url(../images/number.svg);
