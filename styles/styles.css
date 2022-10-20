@@ -524,6 +524,9 @@ body {
 
 .raiting-star {
   margin: 0;
+  background-image: url(../images/star.svg);
+  background-repeat: repeat-x;
+  background-position-y: center;
 }
 
 .hotel-card-cost {
@@ -1191,4 +1194,16 @@ body {
   width: 20px;
   height: 20px;
   top: 10px;
+}
+
+.raiting-stars-4 {
+  width: 73px;
+}
+
+.raiting-stars-3 {
+  width: 55px;
+}
+
+.raiting-stars-2 {
+  width: 38px;
 }
