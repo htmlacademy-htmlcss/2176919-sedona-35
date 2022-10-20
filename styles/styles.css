@@ -621,8 +621,6 @@ body {
   margin: 0 0 90px;
 }
 
-
-
 .footer-social-link {
   background-image: url(../images/social.svg);
   background-repeat: no-repeat;
@@ -651,6 +649,13 @@ body {
 .footer-social-link:focus-visible {
   background-position-y: -110px;
   outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.footer-social-link:focus {
+  background-position-y: -110px;
+  outline: none;
+}
 }
 
 .footer-social-link:active {
@@ -685,6 +690,13 @@ body {
   outline: none;
 }
 
+@supports not selector(:focus-visible) {
+.button-view:focus {
+  border: solid 2px #68A2CA;
+  outline: none;
+}
+}
+
 .button-view:active {
   border: solid 2px #000000;
 }
@@ -695,11 +707,40 @@ body {
   background-color: #615048;
 }
 
-.navigation-link-user:focus-visible,
-.hotel-search-but:focus-visible,
+.navigation-link-user:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.navigation-link-user:focus {
+  background-color: #615048;
+  outline: none;
+}
+}
+
+.hotel-search-but:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.hotel-search-but:focus {
+  background-color: #615048;
+  outline: none;
+}
+}
+
 .hotel-card-button:focus-visible {
   background-color: #615048;
   outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.hotel-card-button:focus {
+  background-color: #615048;
+  outline: none;
+}
 }
 
 .navigation-link-user:active,
@@ -824,12 +865,52 @@ body {
   background-color: #E5E5E5;
 }
 
-.subscription-but:focus-visible,
-.catalog-filter-batton:focus-visible,
-.hotel-card-favorites:focus-visible,
+.subscription-but:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.subscription-but:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+}
+
+.catalog-filter-batton:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.catalog-filter-batton:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+}
+
+.hotel-card-favorites:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.hotel-card-favorites:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+}
+
 .button-added:focus-visible {
   background-color: #68A2CA;
   outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.button-added:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
 }
 
 .telephone:hover {
@@ -839,6 +920,13 @@ body {
 .telephone:focus-visible {
   color: #756157;
   outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.telephone:focus {
+  color: #756157;
+  outline: none;
+}
 }
 
 .telephone:active {
@@ -873,8 +961,20 @@ body {
   fill: #756157;
 }
 
+@supports not selector(:focus-visible) {
+.htmlacademy-link:focus .footer-icon path {
+  fill: #756157;
+}
+}
+
 .htmlacademy-link:focus-visible {
   outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.htmlacademy-link:focus {
+  outline: none;
+}
 }
 
 .catalog-filter-batton {
@@ -889,6 +989,13 @@ body {
 .button-reset:focus-visible {
   outline: solid 3px #83B3D3;
   border-radius: 4px;
+}
+
+@supports not selector(:focus-visible) {
+.button-reset:focus {
+  outline: solid 3px #83B3D3;
+  border-radius: 4px;
+}
 }
 
 .button-reset:active {
@@ -915,6 +1022,13 @@ body {
   outline: solid 1px #82B3D3;
 }
 
+@supports not selector(:focus-visible) {
+.pagination-link:focus {
+  background-color: #68A2CA;
+  outline: solid 1px #82B3D3;
+}
+}
+
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -926,6 +1040,13 @@ body {
 .select-control:focus-visible {
   border-color: #68A2CA;
   outline: none;
+}
+
+@supports not selector(:focus-visible) {
+.select-control:focus {
+  border-color: #68A2CA;
+  outline: none;
+}
 }
 
 .select-control:active {
@@ -976,6 +1097,12 @@ body {
   outline: solid 3px #83B3D3;
 }
 
+@supports not selector(:focus-visible) {
+.control-input:focus + .control::before {
+  outline: solid 3px #83B3D3;
+}
+}
+
 .catalog-filter-item:active {
   opacity: 0.3;
 }
@@ -1012,6 +1139,12 @@ body {
 
 .control-radio:focus-visible + .control-radio-label::before {
   outline: solid 3px #83B3D3;
+}
+
+@supports not selector(:focus-visible) {
+.control-radio:focus + .control-radio-label::before {
+  outline: solid 3px #83B3D3;
+}
 }
 
 .control-radio + .control-radio-label::after {
