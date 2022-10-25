@@ -974,20 +974,20 @@ body {
   fill: #000000;
 }
 
-.htmlacademy-link:hover path{
+.htmlacademy-link:hover .footer-icon {
   fill: #756157;
 }
 
-.htmlacademy-link:activ path{
+.htmlacademy-link:activ .footer-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.htmlacademy-link:focus-visible path{
+.htmlacademy-link:focus-visible .footer-icon {
   fill: #756157;
 }
 
 @supports not selector(:focus-visible) {
-.htmlacademy-link:focus path {
+.htmlacademy-link:focus .footer-icon {
   fill: #756157;
 }
 }
