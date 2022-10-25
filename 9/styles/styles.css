@@ -1566,13 +1566,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.date-label {
-  grid-column: 1/-1;
-  display: flex;
-  align-items: baseline;
-  position: relative;
-  justify-content:space-between;
-}
+
 
 .data-field {
   font-family: inherit;
@@ -1867,28 +1861,10 @@ body {
   margin: 0;
 }
 
-
-
-
-
 .footer-social-item:not(:last-child) {
   padding: 0;
   margin: 0 27px 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .catalog-hotel {
   margin-bottom: 60px;
@@ -1896,4 +1872,38 @@ body {
 
 .quantity-adults {
   margin-left: -6px;
+}
+
+.search-form-wrapper {
+  position: relative;
+}
+
+.date-wrapper {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  justify-content:space-between;
+}
+
+.button-added:hover {
+  background-color: #6C9E42;
+}
+
+.button-added:focus-visible {
+  background-color: #6C9E42;
+}
+
+@supports not selector(:focus-visible) {
+.button-added:focus {
+  background-color: #6C9E42;
+}
+}
+
+.button-added:active {
+  opacity: 0.3;
+}
+
+.button-added:disabled {
+  background-color: #E5E5E5;
 }
