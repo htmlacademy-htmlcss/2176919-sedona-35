@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="container-wrapper">
@@ -213,8 +215,17 @@
               <button class="search-form-button button" type="submit">Найти</button>
           </form>
         </section>
-
       </div>
     </div>
+    <script>
+    let buttonOpen = document.querySelector('.navigation-link-user');
+      buttonOpen.onclick = function() {
+  document.querySelector('.modal-container').classList.remove('modal-container-close');
+};
+let buttonClose = document.querySelector('.modal-close-button');
+      buttonClose.onclick = function() {
+  document.querySelector('.modal-container').classList.add('modal-container-close');
+};
+    </script>
   </body>
 </html>

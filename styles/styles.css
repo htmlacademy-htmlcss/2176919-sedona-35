@@ -469,6 +469,7 @@ body {
   grid-column: 1/-1;
   display: flex;
   align-items: center;
+  color: #FFFFFF;
 }
 
 .advantages-list li:nth-child(2n) {
