@@ -384,6 +384,7 @@ body {
 
 .navigation-user {
   margin-left: auto;
+  justify-content: flex-end;
 }
 .page-header {
   display: -webkit-box;
@@ -451,6 +452,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .hotel-search {
@@ -525,30 +527,6 @@ body {
   padding-top: 69px;
 }
 
-.advantages-item-photo {
-  background: #82B3D3;
-  grid-column: 1/-1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #FFFFFF;
-}
-
-.advantages-list li:nth-child(2n) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.services-list li:nth-child(2n+1) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-list li:nth-child(3) {
-  background: rgba(131, 179, 211, 0.2);
-}
-
 .footer-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,6 +534,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 10px;
+  width: 170px;
 }
 
 .catalog-filter-form {
@@ -2069,29 +2048,62 @@ body {
 }
 
 .navigation-item-activ::after {
-  position: absolute;
   content: "";
-  width: 68px;
-  bottom: 0;
-  left: 16px;
-  display: inline;
+  width: 100%;
+  display: block;
   border-bottom: solid 2px #756257;
+  padding-bottom: 20px;
+  margin-right: 16px;
 }
 
 .navigation-item-activ {
-  position: relative;
+  padding-bottom: 0;
 }
 
-.navigation-item-activ-catalog {
-  position: relative;
+.advantages-item-photo {
+  background: #82B3D3;
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
 }
 
-.navigation-item-activ-catalog::after {
-  position: absolute;
-  content: "";
-  width: 93px;
-  bottom: 0;
-  left: 16px;
-  display: inline;
-  border-bottom: solid 2px #756257;
+
+
+.advantages-item {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.services-item:nth-child(odd) {
+  background-color:  rgba(131, 179, 211, 0.12);
+}
+
+.navigation-item-user~ .navigation-item-user {
+  margin-left: 14px;
+}
+
+.hotel-search-but~ .hotel-search-but {
+  margin-top: 14px;
+}
+
+.subscription-form~ .subscription-form {
+  margin-top: 14px;
+}
+
+
+
+
+
+
+
+.navigation-user-button {
+  margin-bottom: 14px;
 }
