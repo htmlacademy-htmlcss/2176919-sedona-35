@@ -1598,8 +1598,7 @@ body {
 }
 
 .amount-form-field {
-  min-width: 31px;
-  max-width: 38px;
+  min-width: 110px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -1608,6 +1607,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .children {
