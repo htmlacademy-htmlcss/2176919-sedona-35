@@ -85,10 +85,10 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
+  border-color: #82B3D3;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  border-color: #82B3D3;
   border: none;
   cursor: pointer;
 
@@ -221,7 +221,7 @@ body {
 }
 
 .catalog-filter {
-  padding: 35px 70px 70px;
+  padding: 35px 70px 54px;
   background-color: #82B3D3;
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
@@ -364,7 +364,6 @@ body {
   -ms-flex-pack:justify;
   justify-content:space-between;
   width: 100%;
-  padding-right: 70px;
 }
 
 .navigation-list {
@@ -376,28 +375,22 @@ body {
   max-width: 470px;
 }
 
-.navigation-user {
-  margin-left: auto;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-left: 70px;
+  padding: 0 70px;
 }
 
 .logo-link {
-  margin-bottom: -12px;
-  margin-right: 44px;
+  margin-bottom: -10px;
+  margin-right: 28px;
   z-index: 1;
 }
 
-.navigation-item,
-.navigation-item-user {
+.navigation-item {
   margin: auto 0;
 }
 
@@ -464,7 +457,7 @@ body {
 
 .subscription-promise {
   margin:0;
-  padding: 20px 363px 0;
+  padding: 20px 70px 0;
   margin-bottom:  54px;
 }
 
@@ -480,7 +473,7 @@ body {
   -webkit-box-pack:justify;
   -ms-flex-pack:justify;
   justify-content:space-between;
-  padding: 50px 70px 39px;
+  padding: 38px 70px 20px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -537,7 +530,6 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-bottom: 10px;
-  width: 170px;
 }
 
 .catalog-filter-form {
@@ -550,6 +542,7 @@ body {
   padding: 0 70px 0 0;
   border: none;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .filter-result {
@@ -639,7 +632,8 @@ body {
 }
 
 .advantages-description {
-  padding: 0 85px 18px 0;
+  padding: 0 85px;
+  padding-bottom: 24px;
   margin: 0;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
@@ -694,7 +688,7 @@ body {
 }
 
 .advantages-title {
-  padding: 20px 114px;
+  padding: 10px 114px 0 114px;
   margin: 0;
 }
 
@@ -731,7 +725,8 @@ body {
 }
 
 .navigation-link-user {
-  width: 160px;
+  min-width: 160px;
+  box-sizing: border-box;
 }
 
 .hotel-card-button {
@@ -1152,7 +1147,6 @@ body {
   position: absolute;
   z-index: -1;
   opacity: 0;
-  margin: 10px 0 0 20px;
 }
 
 .control-input + .control {
@@ -1283,10 +1277,10 @@ body {
 }
 
 .navigation-link-search {
+  position: relative;
   display: inline-block;
-  margin-right: 26px;
-  width: 18px;
-  height: 18px;
+  width: 44px;
+  min-height: 56px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1294,9 +1288,9 @@ body {
 
 .navigation-link-favorites {
   position: relative;
-  margin-right: 33px;
-  width: 18px;
-  height: 18px;
+  margin-right: 20px;
+  width: 44px;
+  min-height: 56px;
   display: inline-block;
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
@@ -1305,7 +1299,7 @@ body {
 
 .navigation-link-favorites::before {
   position: absolute;
-  top: -10px;
+  top: 10px;
   width: 20px;
   height: 20px;
   -webkit-box-sizing: border-box;
@@ -1969,7 +1963,7 @@ body {
 }
 
 .catalog-hotel {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .quantity-adults {
@@ -2022,8 +2016,9 @@ body {
 }
 
 .navigation-item {
+
   max-width: 117px;
-  padding: 20px 16px;
+  padding: 18px 16px;
 }
 
 .date-label {
@@ -2035,8 +2030,7 @@ body {
   width: 100%;
   display: block;
   border-bottom: solid 2px #756257;
-  padding-bottom: 20px;
-  margin-right: 16px;
+  padding-bottom: 18px;
 }
 
 .navigation-item-activ {
@@ -2064,12 +2058,10 @@ body {
 }
 
 .services-item:nth-child(odd) {
-  background-color:  rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.navigation-item-user ~ .navigation-item-user {
-  margin-left: 14px;
-}
+
 
 .hotel-search-but ~ .hotel-search-but {
   margin-top: 14px;
@@ -2116,9 +2108,7 @@ body {
   margin-top: 16px;
 }
 
-.catalog-filter-group ~ .catalog-filter-group {
-  margin-top: 16px;
-}
+
 
 .select-control ~ .select-control {
   margin-top: 16px;
@@ -2231,4 +2221,34 @@ body {
 .tooltip-toggle:focus {
   background-color: #68A2CA;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation-item-user {
+  margin: auto 0;
+}
+
+
+
+
+
+
+
+.catalog-filter-item {
+  display: flex;
 }
