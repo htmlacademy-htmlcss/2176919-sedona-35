@@ -1803,7 +1803,7 @@ body {
 .tooltip-text {
   position: absolute;
   right: 112px;
-  bottom: 27px;
+  bottom: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
@@ -1819,7 +1819,7 @@ body {
 
 .tooltip-text::before {
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 119px;
   width: 19px;
   height: 9px;
