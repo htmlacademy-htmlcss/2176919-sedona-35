@@ -2151,34 +2151,6 @@ body {
   opacity: 0.3;
 }
 
-.navigation-link-search:focus-visible {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-
-@supports not selector(:focus-visible) {
-.navigation-link-search:focus {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-}
-
-.navigation-link-favorites:focus-visible {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-
-@supports not selector(:focus-visible) {
-.navigation-link-favorites:focus {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-}
-
 .email:hover {
   background-color: #E6E6E6;
 }
