@@ -55,7 +55,6 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #F2F2F2;
-
 }
 
 .container-wrapper {
@@ -374,7 +373,6 @@ body {
   flex-wrap: wrap;
   max-width: 470px;
 }
-
 
 .page-header {
   display: -webkit-box;
@@ -2061,8 +2059,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-
-
 .hotel-search-but ~ .hotel-search-but {
   margin-top: 14px;
 }
@@ -2107,8 +2103,6 @@ body {
 .range ~ .range  {
   margin-top: 16px;
 }
-
-
 
 .select-control ~ .select-control {
   margin-top: 16px;
@@ -2157,34 +2151,6 @@ body {
   opacity: 0.3;
 }
 
-.navigation-link-search:focus-visible {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-
-@supports not selector(:focus-visible) {
-.navigation-link-search:focus {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-}
-
-.navigation-link-favorites:focus-visible {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-
-@supports not selector(:focus-visible) {
-.navigation-link-favorites:focus {
-  outline: solid 3px #82B3D3;
-  border-radius: 4px;
-  outline-offset: 3px;
-}
-}
-
 .email:hover {
   background-color: #E6E6E6;
 }
@@ -2223,31 +2189,9 @@ body {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navigation-item-user {
   margin: auto 0;
 }
-
-
-
-
-
-
 
 .catalog-filter-item {
   display: flex;
