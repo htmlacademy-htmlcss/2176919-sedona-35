@@ -55,7 +55,6 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #F2F2F2;
-
 }
 
 .container-wrapper {
@@ -374,7 +373,6 @@ body {
   flex-wrap: wrap;
   max-width: 470px;
 }
-
 
 .page-header {
   display: -webkit-box;
@@ -2061,8 +2059,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-
-
 .hotel-search-but ~ .hotel-search-but {
   margin-top: 14px;
 }
@@ -2107,8 +2103,6 @@ body {
 .range ~ .range  {
   margin-top: 16px;
 }
-
-
 
 .select-control ~ .select-control {
   margin-top: 16px;
@@ -2223,31 +2217,9 @@ body {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navigation-item-user {
   margin: auto 0;
 }
-
-
-
-
-
-
 
 .catalog-filter-item {
   display: flex;
