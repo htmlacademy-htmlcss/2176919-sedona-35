@@ -753,6 +753,7 @@ width: 142px;
   display: block;
   box-sizing: border-box;
   margin-bottom: 14px;
+  padding: 3px;
 }
 
 .button-view-table {
@@ -1283,6 +1284,7 @@ width: 142px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
 }
 
 .navigation-link-favorites {
@@ -1294,6 +1296,7 @@ width: 142px;
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
 }
 
 .navigation-link-favorites::before {
@@ -2210,6 +2213,8 @@ width: 142px;
   padding: 12px 0 12px 12px;
 
 }
+
+
 
 
 
