@@ -102,6 +102,9 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  max-width: 117px;
+  padding: 18px 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -184,6 +187,7 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  padding: 14px;
 }
 
 .inner-header-title {
@@ -229,16 +233,18 @@ body {
 }
 
 .button-reset {
-  display: inline-block;
-  padding: 8px 50px;
+  padding: 8px;
+  width: 191px;
   color: inherit;
   background-color: rgba(28,28,28,0);
   border: none;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
+
 }
 
 .hotel-card-link {
@@ -372,6 +378,7 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 470px;
+  align-content: center;
 }
 
 .page-header {
@@ -383,14 +390,12 @@ body {
 }
 
 .logo-link {
-  margin-bottom: -10px;
+  margin-bottom: -12px;
   margin-right: 28px;
   z-index: 1;
 }
 
-.navigation-item {
-  margin: auto 0;
-}
+
 
 .navigation-list-page {
   width: 500px;
@@ -432,7 +437,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 45px 70px 35px 82px;
+  padding: 31px 70px 21px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -460,7 +465,7 @@ body {
 }
 
 .footer-social {
-  min-width: 142px;
+width: 142px;
 }
 
 .filter-search {
@@ -527,7 +532,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 10px;
 }
 
 .catalog-filter-form {
@@ -743,9 +747,12 @@ body {
 }
 
 .footer-social-link {
-  width: 25px;
-  height: 20px;
+  position: relative;
+  width: 47px;
+  height: 40px;
   display: block;
+  box-sizing: border-box;
+  margin-bottom: 14px;
 }
 
 .button-view-table {
@@ -1016,7 +1023,6 @@ body {
 
 .telephone:focus-visible {
   color: #756157;
-  outline: none;
 }
 
 @supports not selector(:focus-visible) {
@@ -1054,8 +1060,9 @@ body {
 }
 
 .catalog-filter-batton {
-  padding: 8px 50px;
-  margin-bottom: 40px;
+  padding: 8px;
+  width: 191px;
+  margin-bottom: 32px;
 }
 
 .button-reset:hover {
@@ -1222,39 +1229,33 @@ body {
 }
 }
 
-.footer-social-vk:focus-visible {
+.footer-social-vk:focus-visible.footer-social-vk::before {
   background-color: #68A2CA;
-  outline: none;
 }
 
 @supports not selector(:focus-visible) {
-.footer-social-vk:focus {
+.footer-social-vk:focus.footer-social-vk::before {
   background-color: #68A2CA;
-  outline: none;
 }
 }
 
-.footer-social-telegram:focus-visible {
+.footer-social-telegram:focus-visible.footer-social-telegram::before {
   background-color: #68A2CA;
-  outline: none;
 }
 
 @supports not selector(:focus-visible) {
-.footer-social-telegram:focus {
+.footer-social-telegram:focus.footer-social-telegram::before {
   background-color: #68A2CA;
-  outline: none;
 }
 }
 
-.footer-social-youtube:focus-visible {
+.footer-social-youtube:focus-visible.footer-social-youtube::before {
   background-color: #68A2CA;
-  outline: none;
 }
 
 @supports not selector(:focus-visible) {
-.footer-social-youtube:focus {
+.footer-social-youtube:focus.footer-social-youtube::before {
   background-color: #68A2CA;
-  outline: none;
 }
 }
 
@@ -1276,9 +1277,9 @@ body {
 
 .navigation-link-search {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 44px;
-  min-height: 56px;
+  min-height: 64px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1288,8 +1289,8 @@ body {
   position: relative;
   margin-right: 20px;
   width: 44px;
-  min-height: 56px;
-  display: inline-block;
+  min-height: 64px;
+  display: block;
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1331,7 +1332,13 @@ body {
   width: 90px;
 }
 
-.footer-social-vk {
+.footer-social-vk::before {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  content: "";
+  width: 24px;
+  height: 14px;
   background-color: #83B3D3;
   -webkit-mask-image: var(--vk-icon);
   mask-image: var(--vk-icon);
@@ -1351,7 +1358,13 @@ body {
   background-color: rgba(104, 162, 202, 0.3);
 }
 
-.footer-social-telegram {
+.footer-social-telegram::before {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  content: "";
+  width: 18px;
+  height: 15px;
   background-color: #83B3D3;
   -webkit-mask-image: var(--telegram-icon);
   mask-image: var(--telegram-icon);
@@ -1359,7 +1372,13 @@ body {
   mask-repeat: no-repeat;
 }
 
-.footer-social-youtube {
+.footer-social-youtube::before {
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  content: "";
+  width: 22px;
+  height: 17px;
   background-color: #83B3D3;
   -webkit-mask-image: var(--you-tube-icon);
   mask-image: var(--you-tube-icon);
@@ -1955,10 +1974,7 @@ body {
   margin: 0;
 }
 
-.footer-social-item:not(:last-child) {
-  padding: 0;
-  margin: 0 27px 0 0;
-}
+
 
 .catalog-hotel {
   margin-bottom: 52px;
@@ -2013,25 +2029,21 @@ body {
   background-color: #E5E5E5;
 }
 
-.navigation-item {
 
-  max-width: 117px;
-  padding: 18px 16px;
-}
 
 .date-label {
   max-width: 130px
 }
 
-.navigation-item-activ::after {
+.navigation-link-activ::after {
   content: "";
   width: 100%;
   display: block;
   border-bottom: solid 2px #756257;
-  padding-bottom: 18px;
+  padding-top: 18px;
 }
 
-.navigation-item-activ {
+.navigation-link-activ {
   padding-bottom: 0;
 }
 
@@ -2087,10 +2099,6 @@ body {
   max-width: 720px;
 }
 
-.telephone ~ .telephone {
-  margin-left: 14px;
-}
-
 .navigation-link-user ~ .navigation-link-user {
   margin-top: 14px;
   display: block;
@@ -2098,6 +2106,7 @@ body {
 
 .navigation-user-button ~ .navigation-user-button {
   margin-top: 14px;
+  margin-left: 8px;
 }
 
 .range ~ .range  {
@@ -2189,10 +2198,23 @@ body {
 }
 }
 
-.navigation-item-user {
-  margin: auto 0;
-}
-
 .catalog-filter-item {
   display: flex;
 }
+
+.navigation-user-button {
+  align-self: center;
+}
+
+.htmlacademy-link {
+  padding: 12px 0 12px 12px;
+
+}
+
+
+
+
+
+
+
+
