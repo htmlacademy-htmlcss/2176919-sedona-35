@@ -740,6 +740,7 @@ width: 142px;
   margin: 0;
   padding-top: 20px;
   min-width: 60px;
+  word-break: break-word;
   box-sizing: border-box;
 }
 
