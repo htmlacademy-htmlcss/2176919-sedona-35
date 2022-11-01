@@ -274,7 +274,9 @@ body {
 
 .pagination-link {
   display: block;
-  padding: 12px 0;
+  padding: 12px 3px;
+  min-width: 60px;
+  box-sizing: border-box;
   text-decoration: none;
   font-size: 20px;
   word-break: break-word;
@@ -287,7 +289,9 @@ body {
 
 .pagination-current {
   display: block;
-  padding: 12px 0;
+  padding: 12px 3px;;
+  min-width: 60px;
+  box-sizing: border-box;
   text-decoration: none;
   font-size: 20px;
   line-height: 36px;
@@ -310,7 +314,7 @@ body {
 }
 
 .button-added {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   width: 140px;
 }
 
@@ -497,10 +501,10 @@ width: 142px;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 20px;
   padding: 0 70px;
+  margin-bottom: 40px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom:  80px;
 }
 
 .main-inner {
@@ -587,6 +591,8 @@ width: 142px;
 .pagination {
   width: 1060px;
   margin: 0 auto;
+  padding-top: 40px;
+  border-top: solid 1px #e6e6e6;
 }
 
 .pagination-item:not(:last-child) {
@@ -725,7 +731,7 @@ width: 142px;
 }
 
 .pagination-item {
-  width: 60px;
+  max-width: 160px;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -733,6 +739,8 @@ width: 142px;
 .pagination-ellipsis {
   margin: 0;
   padding-top: 20px;
+  min-width: 60px;
+  box-sizing: border-box;
 }
 
 .navigation-link-user {
@@ -1320,7 +1328,7 @@ width: 142px;
   line-height: 10px;
   color: #ffffff;
   content: "12";
-  background-color: #7DB54F;
+  background-color: #7db54f;
   border-radius: 50%;
 }
 
@@ -1502,7 +1510,7 @@ width: 142px;
 }
 
 .cost-input:hover + .cost {
-  background-color: aqua;
+  background-color: #e6e6e6;
 }
 
 .cost-background-right {
@@ -1538,6 +1546,8 @@ width: 142px;
   z-index: 1;
   max-width: 29px;
   word-break: break-word;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .cost-max:hover ~ .cost-background-right {
@@ -1662,7 +1672,9 @@ width: 142px;
   display: block;
   grid-column: 1/-1;
   padding: 18px 0;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 10px;
 }
 
 .search-form .field-group {
@@ -1986,8 +1998,6 @@ width: 142px;
   margin: 0;
 }
 
-
-
 .catalog-hotel {
   margin-bottom: 52px;
 }
@@ -2040,8 +2050,6 @@ width: 142px;
 .button-added:disabled {
   background-color: #e5e5e5;
 }
-
-
 
 .date-label {
   max-width: 130px
@@ -2229,13 +2237,3 @@ width: 142px;
 .wrapper .advantages-title {
   color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
